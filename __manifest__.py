@@ -1,0 +1,19 @@
+{
+    'name': 'Universal Approval Management',
+    'version': '18.0.1.0.0',
+    'summary': 'Centralized Approval Workflow for any Odoo Document',
+    'description': 'A generic approval management system allowing administrators to configure approvals on quotation, invoice, repair orders, and other models.',
+    'category': 'Productivity',
+    'author': 'Rahmathullah / Digitz Technologies',
+    'depends': ['base', 'mail', 'sale_management', 'account', 'repair'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/approval_views.xml',
+            'views/sale_order_views.xml',
+        'views/account_move_views.xml',
+        'views/repair_order_views.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}
